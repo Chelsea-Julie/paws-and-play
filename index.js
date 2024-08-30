@@ -17,8 +17,8 @@ app.use((req, res, next) => {
 
     next()
 })
-app.use('/clients', userRouter)
-app.use('/product', productRouter)
+app.use('/clients', clientsRouter)
+app.use('/services', servicesRouter)
 app.use(
     express.static('./static'),
     express.json(),
