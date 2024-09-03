@@ -1,7 +1,9 @@
-import { clientRouter, express } from './controller/clientController.js'
-import { serviceRouter } from './controller/serviceController.js'
+import { userRouter, express } from './controller/userController.js'
+// import { serviceRouter } from './controller/serviceController.js'
 import cors from 'cors'
 import path from 'path'
+import 'dotenv/config'
+
 
 // Create an express app
 const app = express()
@@ -17,8 +19,8 @@ app.use((req, res, next) => {
 
     next()
 })
-app.use('/clients', clientsRouter)
-app.use('/services', servicesRouter)
+app.use('/users', userRouter)
+// app.use('/services', servicesRouter)
 app.use(
     express.static('./static'),
     express.json(),
