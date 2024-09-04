@@ -1,5 +1,5 @@
 import { userRouter, express } from './controller/userController.js'
-// import { serviceRouter } from './controller/serviceController.js'
+import { servicesRouter} from './controller/serviceController.js'
 import cors from 'cors'
 import path from 'path'
 import 'dotenv/config'
@@ -20,7 +20,7 @@ app.use((req, res, next) => {
     next()
 })
 app.use('/users', userRouter)
-// app.use('/services', servicesRouter)
+app.use('/services', servicesRouter)
 app.use(
     express.static('./static'),
     express.json(),
