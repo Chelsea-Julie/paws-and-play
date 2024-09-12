@@ -1,6 +1,6 @@
 <template>
     <div>
-        
+        <h2>Welcome to the Bookings</h2>
     </div>
 </template>
 <script>

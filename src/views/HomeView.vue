@@ -267,7 +267,7 @@ body, html {
 .content {
   color: #fff;
   max-width: 80%;
-  text-align: right; /* Align text to the right */
+  text-align: center; /* Align text to the right */
 }
 
 /* Headings */
@@ -286,7 +286,7 @@ body, html {
 .button-container {
   display: flex;
   gap: 15px;
-  justify-content: flex-end; /* Align buttons to the right */
+  justify-content: center; /* Align buttons to the right */
 }
 
 .button {
