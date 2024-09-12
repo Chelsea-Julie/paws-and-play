@@ -40,6 +40,8 @@ userRouter.get('/orders', (req, res) => {
 })
 
 userRouter.get('/:id/orders', (req, res) => {
+    console.log('here');
+    
     Bookings.onePersonsBookings(req, res)
 })
 

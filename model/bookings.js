@@ -56,15 +56,15 @@ class Bookings {
     static onePersonsBookings(req, res){
         try {   
             const query = `
-                SELECT b.userID , concat(u.firstName, ' ', u.lastName) 'Full Name', b.bookID 'book ID', s.serviceName 'Services', Duration 'Duration' ,
+                SELECT b.userID , concat(u.firstName, ' ', u.lastName) 'Full Name', s.serviceName 'Services', Duration 'Total Duration',
                 CASE 
-                    WHEN s.serviceName NOT IN ('Grooming', 'VAT Care') THEN Duration * s.price
-                    ELSE s.price
-                END AS 'Total Amount'
+                WHEN s.serviceName NOT IN ('Grooming', 'VAT Care') THEN Duration * s.price
+                ELSE s.price
+                END AS 'Total Amount'   
                 FROM Bookings b
                 JOIN Users u USING(userID)
                 JOIN Services s USING(serviceID)
-                WHERE b.userID = 2
+                WHERE b.userID = ${req.params.id}
                 ;
             `
             db.query(query, (err, results) => {
