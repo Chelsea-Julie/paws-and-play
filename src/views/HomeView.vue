@@ -3,11 +3,11 @@
   <div id="app">
     <div class="background-container">
       <div class="content">
-        <h3 class="subheading">The best dog groomers you'll find</h3>
-        <h1 class="main-heading">Your Go-to Spot for Dog Care</h1>
+        <h1 class="main-heading">Paws&Play</h1>
+        <h3 class="subheading">Your Dog’s Home Away from Home, Full of Fun, Friends, and Tail-Wagging Adventures!</h3>
         <div class="button-container">
-          <a href="#" class="button">Order Online</a>
-          <a href="#" class="button">Our Menu</a>
+          <router-link to="../views/Rates&Packages" class="button">Rates & Packages</router-link>
+          <router-link to="../views/BookingsView" class="button">Bookings</router-link>
         </div> 
       </div>
     </div>
@@ -52,10 +52,10 @@
     </div>
   </div>
 
-  <div class="container">
-  <div class="row card-section">
+  <!-- <div class="container">
+  <div class="row card-section"> -->
     <!-- Doggy Daycare Card -->
-    <div class="col-md-3">
+    <!-- <div class="col-md-3">
       <div class="card">
         <img src="https://chelsea-julie.github.io/all-images/images/capstone/services.png" class="card-img-top" alt="Doggy Daycare">
         <div class="card-body">
@@ -64,10 +64,10 @@
           <a href="#" class="btn btn-primary">Read More</a>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Sleepovers Card -->
-    <div class="col-md-3">
+    <!-- <div class="col-md-3">
       <div class="card">
         <img src="https://chelsea-julie.github.io/all-images/images/capstone/pexels-cdomingues10-731022.jpg" class="card-img-top" alt="Sleepovers">
         <div class="card-body">
@@ -78,19 +78,9 @@
       </div>
     </div>
 
-    <!-- Puppy Socialising Card -->
-    <div class="col-md-3">
-      <div class="card">
-        <img src="https://chelsea-julie.github.io/all-images/images/capstone/pexels-wildlittlethingsphoto-27175407.jpg" class="card-img-top" alt="Puppy Socialising">
-        <div class="card-body">
-          <h5 class="card-title">Puppy Socialising</h5>
-          <p class="card-text">Socialization is the key to a happy pet. We offer supervised socializing classes that fit their needs.</p>
-          <a href="#" class="btn btn-primary">Read More</a>
-        </div>
-      </div>
-    </div>
+
   </div>
-  </div>
+  </div> -->
     <!-- Parallax Section -->
     <div class="parallax"></div>
 
@@ -117,7 +107,7 @@
       <div class="gallery-item">
         <img src="https://chelsea-julie.github.io/all-images/images/capstone/hike2.jpg" alt="Pendant Light">
         <div class="overlay">
-          <h3>Taking the daogs to the beach</h3>
+          <h3>Taking the dogs to the beach</h3>
           <p>Our furry friends had a blast digging in the sand and splashing in the waves during their fun-filled day at the beach.</p>
         </div>
       </div>
@@ -167,7 +157,7 @@ body, html {
   justify-content: center;
   align-items: center;
   text-align: right; /* Align text to the right */
-  color: #fff; /* Make text white */
+  color: #ff7f50 ; /* Make text white */
   
 }
 /* Card Section Container */
@@ -265,9 +255,10 @@ body, html {
 
 /* Content Styling */
 .content {
-  color: #fff;
+  color: white;
   max-width: 80%;
   text-align: center; /* Align text to the right */
+  font: bolder;
 }
 
 /* Headings */
@@ -292,8 +283,8 @@ body, html {
 .button {
   text-decoration: none;
   padding: 10px 20px;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid white;
+  color: white;
   font-size: 1rem;
   border-radius: 5px;
   transition: background-color 0.3s ease, transform 0.3s ease;

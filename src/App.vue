@@ -4,16 +4,18 @@
     <main class="container-fluid">
       <router-view/>
     </main>
+    <FooterComp />
   </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
+import FooterComp from './components/FooterComp.vue';
 
 export default{
   name: 'AppView',
   components: {
-    NavBar
+    NavBar,FooterComp
   }
 }
 </script>

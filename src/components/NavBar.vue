@@ -23,7 +23,7 @@
               <router-link class="nav-link" active-class="active" to="/sleepovers">Sleepovers</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" active-class="active" to="/rates">Rates & Packages</router-link>
+              <router-link class="nav-link" active-class="active" to="/ratespackages">Rates & Packages</router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link" active-class="active" to="/bookings">Bookings</router-link>
@@ -64,7 +64,7 @@
   
   .navbar-nav .nav-link:hover {
     color: #D2691E; /* Cozy burnt orange on hover */
-    background-color: #FFF4E6;
+    background-color: #FFF4E6;  
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
