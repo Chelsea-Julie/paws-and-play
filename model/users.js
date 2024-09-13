@@ -11,7 +11,7 @@ class User {
             SELECT * 
             FROM Users;`
             db.query(strQry, (err, results) => {
-                if (err) throw new Error (err.message);
+                if (err) throw new Error (err);
                 res.json({
                     status: res.statusCode,
                     results: results
