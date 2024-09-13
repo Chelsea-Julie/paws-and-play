@@ -8,7 +8,7 @@ class Services {
             FROM Services
             `
             db.query(strQry, (err, results) => {
-                if (err) throw new Error('Failed to fetch all services😭')
+                if (err) throw new Error(err)
                 res.json({
                     status: res.statusCode,
                     results: results
