@@ -10,9 +10,10 @@
         </div>
 
         <!-- Packages Section -->
+         
+        <div class="mom">
         <div class="container">
             <div class="package">
-                <img src="path-to-image1.jpg" alt="1 Day per Week" class="package-image">
                 <h2>1 Day per Week</h2>
                 <div class="price">R185</div>
                 <p>Per Day</p>
@@ -24,7 +25,6 @@
                 <button>Book Now!</button>
             </div>
             <div class="package">
-                <img src="path-to-image2.jpg" alt="2 Days per Week" class="package-image">
                 <h2>2 Days per Week</h2>
                 <div class="price">R180</div>
                 <p>Per Day</p>
@@ -36,7 +36,6 @@
                 <button>Book Now!</button>
             </div>
             <div class="package featured">
-                <img src="./pexels-poodles2doodles-1458925.jpg" alt="5 Days per Week" class="package-image">
                 <h2>5 Days per Week</h2>
                 <div class="price">R165</div>
                 <p>Per Day</p>
@@ -48,7 +47,6 @@
                 <button>Book Now!</button>
             </div>
             <div class="package">
-                <img src="path-to-image4.jpg" alt="3 Days per Week" class="package-image">
                 <h2>3 Days per Week</h2>
                 <div class="price">R175</div>
                 <p>Per Day</p>
@@ -60,7 +58,6 @@
                 <button>Book Now!</button>
             </div>
             <div class="package">
-                <img src="path-to-image5.jpg" alt="4 Days per Week" class="package-image">
                 <h2>4 Days per Week</h2>
                 <div class="price">R170</div>
                 <p>Per Day</p>
@@ -71,6 +68,7 @@
                 </ul>
                 <button>Book Now!</button>
             </div>
+        </div>
         </div>
     </div>
 </template>
@@ -131,11 +129,18 @@ body {
     border-radius: 8px;
 }
 
+.mom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
+
 }
 
 .package {
@@ -172,7 +177,7 @@ body {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #00AAFF;
+    color: #A0522D;
 }
 
 .package p {
@@ -194,7 +199,7 @@ body {
 }
 
 button {
-    background-color: #00AAFF;
+    background-color: #A0522D;
     color: white;
     border: none;
     padding: 12px 18px;
@@ -205,6 +210,6 @@ button {
 }
 
 button:hover {
-    background-color: #0088CC;
+    background-color: #A0522D;
 }
 </style>
